@@ -1,0 +1,186 @@
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mfirstuc}
+
+\usepackage{tikz}
+\usepackage[all]{xy}
+
+\usepackage[
+  style = authoryear,
+  backend = biber]{biblatex}
+\addbibresource{refer.bib}
+
+\usepackage[
+	symbol, 
+	% perpage
+]{footmisc}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+
+
+% table
+\usepackage{booktabs}
+\usepackage{tablefootnote}
+
+
+
+
+
+% useful
+\usepackage{xstring}
+
+
+% # Colors - Refers Envs
+
+% ## Colors
+\usepackage[
+  dvipsnames,
+  svgnames]{xcolor}
+
+% ### Colors Alias
+% \definecolor{mygreen}{RGB}{64, 144, 144}
+% #### Green colors
+\colorlet{mygreen}{Teal}
+
+% #### Blue colors
+% \colorlet{myblue}{ProcessBlue}
+% \colorlet{myblue}{RoyalBlue}
+\colorlet{myblue}{SteelBlue}
+
+% ### Coloring
+\newcommand{\greencolored}[1]{\textcolor{mygreencolor}{#1}}
+
+\newcommand{\bluecolored}[1]{\textcolor{myblue}{#1}}
+
+% ## Refers, Citation
+% \usepackage{cite}
+\usepackage{hyperref}
+\hypersetup{
+	%Colours links instead of ugly boxes
+	colorlinks = true, 
+	linktocpage = true,
+	%Colour for external hyperlinks
+	urlcolor     = red, 
+	%Colour of internal links
+	linkcolor    = mygreen, 
+	%Colour of citations, could be ``red''
+	citecolor   = myblue,
+}
+
+% ### Refer with text.
+\newcommand{\namerefbf}[1]{\textbf{\nameref{#1}}}
+
+% BNF
+\usepackage{simplebnf}
+
+
+
+
+
+
+
+
+
+
+
+% # Math Envs
+
+% AMS Theorem
+\usepackage{amsthm}
+\theoremstyle{definition}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem*{observation}{Observation}
+\newtheorem*{remark}{Remark}
+\newtheorem{notation}{Notation}
+\newtheorem*{solution}{Solution}
+\newtheorem{property}{Property}
+\newtheorem{exercise}{Exercise}
+
+
+
+\newcommand{\define}[2]{
+  \begin{definition}
+    [#1]{
+      #2
+    }
+  \end{definition}
+}
+
+
+\newcommand{\defl}[2]{
+  \begin{definition}
+    [#1]
+    {
+      #2
+    }
+    \label{def:#1}
+  \end{definition}
+}
+
+\newcommand{\comment}[1]{
+  \textcolor{gray}{#1}
+}
+
+
+
+% Symbols
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+
+\newcommand{\tx}[1]{\text{#1}}
+
+% DOMAIN SPECIFIED
+
+% DOMAIN SPECIFIED PACKAGES
+% logic
+\usepackage{ebproof}
+
+
+
+% DOMAIN SPECIFIED SYMBOLS
+
+% set theory
+\newcommand{\pair}[1]{{\{#1\}}}
+
+
+% category theory
+\newcommand{\mor}{\tsf{Mor}}
+\newcommand{\id}{\tsf{Id}}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\dom}{\tsf{dom}}
+\newcommand{\cod}{\tsf{cod}}
+
+
+% function
+\newcommand{\of}{\circ}
+
+% logic
+\newcommand{\siff}{\leftrightarrow}
+
+% Inner Product
+\newcommand{\angles}[1]{{\langle #1 \rangle}}
+
+
+% Complex ANalysis
+\newcommand{\px}{{\frac{\partial}{\partial x}}}
+\newcommand{\py}{{\frac{\partial}{\partial y}}}
+\newcommand{\pz}{{\frac{\partial}{\partial z}}}
+\newcommand{\pzc}{{\frac{\partial}{\partial {\bar z}}}}
+
+
+
+
+
+
+
+
+
+
+
