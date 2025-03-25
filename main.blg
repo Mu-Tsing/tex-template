@@ -1,9 +1,0 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is '/Users/mulikas/GitHub/tex-template-note/main.blg'
-[82] biber-darwin:340> INFO - === Fri Mar  7, 2025, 12:19:54
-[103] Biber.pm:419> INFO - Reading '/Users/mulikas/GitHub/tex-template-note/main.bcf'
-[192] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[210] bbl.pm:660> INFO - Writing '/Users/mulikas/GitHub/tex-template-note/main.bbl' with encoding 'UTF-8'
-[211] bbl.pm:763> INFO - Output to /Users/mulikas/GitHub/tex-template-note/main.bbl
-[211] Biber.pm:131> WARN - The file '/Users/mulikas/GitHub/tex-template-note/main.bcf' does not contain any citations!
-[211] Biber.pm:133> INFO - WARNINGS: 1

@@ -4,16 +4,25 @@
 \usepackage{amsfonts}
 
 \usepackage{tikz}
-
+\usepackage[all]{xy}
 
 \usepackage[
   style = authoryear,
   backend = biber]{biblatex}
 \addbibresource{refer.bib}
 
+\usepackage[symbol, perpage]{footmisc}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+
 
 % table
 \usepackage{booktabs}
+\usepackage{tablefootnote}
+
+
+
+
 
 % useful
 \usepackage{xstring}
@@ -45,14 +54,15 @@
 % \usepackage{cite}
 \usepackage{hyperref}
 \hypersetup{
-  %Colours links instead of ugly boxes
-  colorlinks   = true, 
-  %Colour for external hyperlinks
-  urlcolor     = red, 
-  %Colour of internal links
-  linkcolor    = teal, 
-  %Colour of citations, could be ``red''
-  citecolor   = myblue,
+	%Colours links instead of ugly boxes
+	colorlinks = true, 
+	linktocpage = true,
+	%Colour for external hyperlinks
+	urlcolor     = red, 
+	%Colour of internal links
+	linkcolor    = mygreen, 
+	%Colour of citations, could be ``red''
+	citecolor   = myblue,
 }
 
 % ### Refer with text.
@@ -79,10 +89,15 @@
 \usepackage{amsthm}
 \theoremstyle{definition}
 
+\newtheorem{theorem}{Theorem}
 \newtheorem{definition}{Definition}
 \newtheorem{remark}{Remark}
 \newtheorem{notation}{Notation}
 \newtheorem{solution}{Solution}
+\newtheorem{property}{Property}
+\newtheorem{exercise}{Exercise}
+
+
 
 \newcommand{\define}[2]{
   \begin{definition}
@@ -103,18 +118,6 @@
   \end{definition}
 }
 
-\newcommand{\deflc}[3]{
-  \begin{definition}
-    [#1]
-    {
-      #2
-    }
-    \label{def:#1}
-    \newcommand{#3}{#1}
-  \end{definition}
-}
-
-
 \newcommand{\comment}[1]{
   \textcolor{gray}{#1}
 }
@@ -126,12 +129,13 @@
 \newcommand{\NN}{\mathbb{N}}
 \newcommand{\ZZ}{\mathbb{Z}}
 \newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
 
 % Abbreviation for text series.
 \newcommand{\tbf}[1]{\text{\bf{#1}}}
 \newcommand{\tbfc}[1]{\greencolored{\textbf{#1}}}
 
-\newcommand{\tsf}[1]{\text{\sf{#1}}}
+\newcommand{\tsf}[1]{\textsf{#1}}
 \newcommand{\tsfc}[1]{\bluecolored{\textsf{#1}}}
 
 
@@ -146,14 +150,41 @@
 
 % DOMAIN SPECIFIED SYMBOLS
 
+% set theory
+\newcommand{\pair}[1]{{\{#1\}}}
+
+
 % category theory
 \newcommand{\mor}{\tsf{Mor}}
 \newcommand{\id}{\tsf{Id}}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\dom}{\tsf{dom}}
+\newcommand{\cod}{\tsf{cod}}
+
 
 % function
 \newcommand{\of}{\circ}
 
-
 % logic
 \newcommand{\siff}{\leftrightarrow}
+
+% Inner Product
+\newcommand{\angles}[1]{{\langle #1 \rangle}}
+
+
+% Complex ANalysis
+\newcommand{\px}{{\frac{\partial}{\partial x}}}
+\newcommand{\py}{{\frac{\partial}{\partial y}}}
+\newcommand{\pz}{{\frac{\partial}{\partial z}}}
+\newcommand{\pzc}{{\frac{\partial}{\partial {\bar z}}}}
+
+
+
+
+
+
+
+
+
+
 
