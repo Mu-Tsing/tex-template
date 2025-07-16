@@ -1,3 +1,5 @@
+%! TeX program = lualatex 
+
 \usepackage{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -5,7 +7,15 @@
 \usepackage{mfirstuc}
 
 \usepackage{tikz}
-\usepackage[all]{xy}
+
+\usepackage{fontspec}
+% switch to a monospace font supporting more Unicode characters
+\setmonofont{CascadiaMono}
+\usepackage{minted}
+\newmintinline[lean]{lean4}{bgcolor=white}
+\newminted[leancode]{lean4}{fontsize=\footnotesize}
+\usemintedstyle{tango}  % a nice, colorful theme
+
 
 \usepackage[square,numbers]{natbib}
 \bibliographystyle{abbrvnat}
@@ -20,7 +30,7 @@
 
 % table
 \usepackage{booktabs}
-\usepackage{tablefootnote}
+% \usepackage{tablefootnote}
 
 
 
