@@ -1,5 +1,4 @@
 %! TeX program = lualatex 
-
 \usepackage{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -7,6 +6,7 @@
 \usepackage{mfirstuc}
 
 \usepackage{tikz}
+\usepackage{tikz-cd}
 
 \usepackage{fontspec}
 % switch to a monospace font supporting more Unicode characters
@@ -99,57 +99,31 @@
 \usepackage{amsthm}
 \theoremstyle{definition}
 
-\newtheorem{theorem}{Theorem}
-\newtheorem{proposition}{Proposition}
-\newtheorem{axiom}{Axiom}
-\newtheorem{corollary}{Corollary}
-\newtheorem{definition}{Definition}
+\newtheorem{definition}[definition]{Definition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{notation}[definition]{Notation}
+\newtheorem{property}[definition]{Property}
+\newtheorem{exercise}[definition]{Exercise}
+
+\newtheorem*{solution}{Solution}
 \newtheorem*{observation}{Observation}
 \newtheorem*{remark}{Remark}
-\newtheorem{notation}{Notation}
-\newtheorem*{solution}{Solution}
-\newtheorem{property}{Property}
-\newtheorem{exercise}{Exercise}
-
-
-
-\newcommand{\define}[2]{
-  \begin{definition}
-    [#1]{
-      #2
-    }
-  \end{definition}
-}
-
-
-\newcommand{\defl}[2]{
-  \begin{definition}
-    [#1]
-    {
-      #2
-    }
-    \label{def:#1}
-  \end{definition}
-}
-
-\newcommand{\comment}[1]{
-  \textcolor{gray}{#1}
-}
-
 
 
 % Symbols
 
 \newcommand{\NN}{\mathbb{N}}
 \newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
 \newcommand{\RR}{\mathbb{R}}
 \newcommand{\CC}{\mathbb{C}}
 
 % DOMAIN SPECIFIED
 
 % DOMAIN SPECIFIED PACKAGES
-% logic
-\usepackage{ebproof}
 
 
 
@@ -158,8 +132,9 @@
 \newcommand{\expn}[1]{\exp\{#1\}}
 
 % set theory
+% bracket-like
 \newcommand{\pair}[1]{{\{#1\}}}
-
+\newcommand{\angles}[1]{{\langle #1 \rangle}}
 
 % category theory
 \newcommand{\inv}[1]{ {#1}^{-1} }
@@ -167,26 +142,6 @@
 
 % function
 \newcommand{\of}{\circ}
-
-% logic
-\newcommand{\siff}{\leftrightarrow}
-
-% Inner Product
-\newcommand{\angles}[1]{{\langle #1 \rangle}}
-
-
-% Complex ANalysis
-\newcommand{\px}{{\frac{\partial}{\partial x}}}
-\newcommand{\py}{{\frac{\partial}{\partial y}}}
-\newcommand{\pz}{{\frac{\partial}{\partial z}}}
-\newcommand{\pzc}{{\frac{\partial}{\partial {\bar z}}}}
-
-
-
-
-
-
-
 
 
 
