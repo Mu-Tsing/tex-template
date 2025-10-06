@@ -154,6 +154,16 @@ INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/
 INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
+INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
+INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
+INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
+INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
+INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
+INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
+INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fontspec/fontspec.sty
 INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -219,7 +229,6 @@ INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/
 INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/calc.sty
 INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amscls/amsthm.sty
-INPUT /home/linuxbrew/.linuxbrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/ebproof/ebproof.sty
 INPUT ./body/_titlepage.tex
 INPUT ./.latexmk/aux/main.aux
 OUTPUT .latexmk/aux/main.aux
