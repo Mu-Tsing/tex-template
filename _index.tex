@@ -1,69 +1,6 @@
 \tableofcontents
 \newpage
 
-% # types
-
-\newcommand{\DistPr}[1]{ \textsf{DistPr}(#1) }
-\newcommand{\Optmin}[3]{ \textsf{Optmin}(#1, #2, #3) }
 
 
-
-\section{Main Proof}
-
-
-
-
-\begin{theorem}[Rate Distortion Theorem]
-	Suppose $ {\cal X} $ and $ {\cal Y} $ are finite alphabet, the distortion function $ d $ is bounded by a constant $ d_0 $. For any probability distribution $ p(x) $ defined on $ {\cal X} $, we have:
-	\begin{enumerate}
-		\item If $ R > R_I (D) $, the rate distortion pair $ (R, D) $ is achievable;
-		\item If $ R < R_I (D) $, the rate distortion pair $ (R, D) $ is not achievable.
-	\end{enumerate}
-\end{theorem}
-
-
-
-\section{Convex Function and Optimization}
-
-\begin{definition}[Optimization Minimizing Problem]
-	\label{def:optmin}
-	The minimizing optimization problem with:
-\end{definition}
-
-
-
-\section{Probability Theory}
-
-
-\section{Information Theory}
-
-
-
-
-
-\section{Rate Distortion Theory}
-
-\begin{definition}[Acheivable]
-	\label{def:achievable}
-	A rate distortion-pair is called acheivable if there exists a sequence of $ (n, M_n) $ rate distortion codes with increasing length, such that the rates are less than or equal to $ R $, and:
-	\[
-		\limsup{ E\pair{ \frac{1}{n} d( \mathbf{X}^n, \hat{\mathbf{X}} ) } } \le D 
-	\]
-\end{definition}
-
-
-
-\begin{definition}[Information Rate Distortion Function]
-	For $ D \ge 0 $, define:
-	\[
-		R_I :: \textsf{Real} \to \Optmin{ \DistPr{X, X} }{ \textsf{Expt-Bounded} }{ \textsf{Obj} }
-	\] 
-	and 
-	\[
-		R_I(D) := \min_{ P(X, \hat{X})} E\left[ d(X, \hat{X}) \right] \le D : \quad  I ( X; \hat{X} )
-	\]
-	where $ \textsf{Optmin} $ is the minimizing optimization problem structure in \ref{def:optmin}.
-	
-	
-\end{definition}
 
