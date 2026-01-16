@@ -107,9 +107,21 @@
 
 
 \usepackage{amsthm}
-\theoremstyle{definition}
 
-\newtheorem{definition}{}[section]
+\newtheoremstyle{ega}% name of the style to be used
+  {\topsep}% measure of space to leave above the theorem. E.g.: 3pt
+  {\topsep}% measure of space to leave below the theorem. E.g.: 3pt
+  {\itshape}% name of font to use in the body of the theorem
+  {0pt}% measure of space to indent
+  {}% name of head font
+  {}% punctuation between head and body
+  { }% space after theorem head; " " = normal interword space
+	{\textbf{\thmnumber{(#2) }\thmname{#1}\textit{\thmnote{ #3.}}}}
+
+
+\theoremstyle{ega}
+
+\newtheorem{definition}{Definition}[section]
 \newtheorem{theorem}[definition]{Theorem}
 \newtheorem{proposition}[definition]{Proposition}
 \newtheorem{axiom}[definition]{Axiom}
