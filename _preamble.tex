@@ -101,10 +101,15 @@
 % # Math Envs
 
 % AMS Theorem
+\newcounter{paracounter}[section]
+\renewcommand{\theparacounter}{\thesection . \arbraic{paracounter}}
+
+
+
 \usepackage{amsthm}
 \theoremstyle{definition}
 
-\newtheorem{definition}{Definition}[section]
+\newtheorem{definition}{}[section]
 \newtheorem{theorem}[definition]{Theorem}
 \newtheorem{proposition}[definition]{Proposition}
 \newtheorem{axiom}[definition]{Axiom}
@@ -114,7 +119,8 @@
 \newtheorem{exercise}[definition]{Exercise}
 \newtheorem{examples}[definition]{Examples}
 
-\newtheorem*{comment}{Comment}
+\newtheorem{comment}[definition]{}
+
 \newtheorem*{Solution}{Solution}
 \newtheorem*{observation}{Observation}
 \newtheorem*{remark}{Remark}
