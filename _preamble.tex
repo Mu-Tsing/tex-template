@@ -107,7 +107,6 @@
 
 
 \usepackage{amsthm}
-
 \newtheoremstyle{ega}% name of the style to be used
   {\topsep}% measure of space to leave above the theorem. E.g.: 3pt
   {\topsep}% measure of space to leave below the theorem. E.g.: 3pt
@@ -115,9 +114,8 @@
   {0pt}% measure of space to indent
   {}% name of head font
   {}% punctuation between head and body
-  { }% space after theorem head; " " = normal interword space
-	{\textbf{\thmnumber{(#2) }\thmname{#1}}\textit{\thmnote{ #3.}}}
-
+	{0pt}% space after theorem head; " " = normal interword space
+	{\textbf{\thmnumber{(#2)} \thmname{#1}}\textit{\thmnote{ #3. }}}
 
 \theoremstyle{ega}
 
